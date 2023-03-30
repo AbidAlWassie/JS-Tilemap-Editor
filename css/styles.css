@@ -35,16 +35,17 @@ body {
   color: white;
   width: 90px;
   background-color: #0078e7;
+  border-radius: 3px;
 }
 
 .custom-file-input::-webkit-file-upload-button {
   visibility: hidden;
 }
 .custom-file-input::before {
-  content: 'Upload File';
-  display: inline-block;
-  border: 1px solid #505050;
-  border-radius: 3px;
+  content: 'Upload IMG';
+  /* display: inline-block; */
+  /* border: 1px solid #0078e7;
+  border-radius: 15px; */
   padding: 8px 8px;
   outline: none;
   white-space: nowrap;
