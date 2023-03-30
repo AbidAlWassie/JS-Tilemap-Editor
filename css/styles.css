@@ -21,14 +21,50 @@ body {
 
 .container {
   margin-top: 50px;
-  height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  width: 800px;
+  height: 800px;
+  image-rendering: pixelated;
 }
 
 #canvas {
   border:2px solid dodgerblue;
+}
+
+.custom-image-input {
+  color: white;
+  width: 90px;
+  background-color: #0078e7;
+  border-radius: 3px;
+}
+
+.custom-image-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-image-input::before {
+  content: 'Upload IMG';
+  /* display: inline-block; */
+  /* border: 1px solid #0078e7;
+  border-radius: 15px; */
+  padding: 8px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 11pt;
+}
+.custom-image-input:hover::before {
+  background-color: #418cd1;
+  border-color: rgb(116, 116, 116);
+}
+.custom-image-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 
 .custom-file-input {
@@ -42,7 +78,7 @@ body {
   visibility: hidden;
 }
 .custom-file-input::before {
-  content: 'Upload IMG';
+  content: 'Upload JSON';
   /* display: inline-block; */
   /* border: 1px solid #0078e7;
   border-radius: 15px; */

@@ -5,6 +5,10 @@ const imageUpload = document.getElementById('imageUpload');
 const tileWidth = 16;
 const tileHeight = 16;
 
+const container = document.getElementById('container');
+canvas.width = container.offsetWidth;
+canvas.height = container.offsetHeight;
+
 imageUpload.addEventListener('change', (event) => {
   const file = event.target.files[0];
   const reader = new FileReader();
