@@ -27,13 +27,18 @@ body {
 }
 
 canvas {
-  width: 800px;
-  height: 800px;
-  image-rendering: pixelated;
+
 }
 
 #canvas {
   border:2px solid dodgerblue;
+}
+
+#spriteCanvas {
+  border:2px solid dodgerblue;
+  width: 800px;
+  height: 800px;
+  image-rendering: pixelated;
 }
 
 .custom-image-input {
